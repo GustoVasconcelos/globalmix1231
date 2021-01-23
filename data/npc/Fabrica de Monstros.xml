@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Fabrica de Monstros" script="Fabrica de Monstros.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="514" head="78" body="120" legs="58" feet="15" addons="3" mount="1208" />
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="
+			exercise wand,32389,300000,500;
+			exercise rod,32388,300000,500;
+			exercise sword,32384,300000,500;
+			exercise club,32386,300000,500;
+			exercise axe,32385,300000,500;
+			exercise bow,32387,300000,500;" />
+		<parameter key="shop_sellable" value="
+			empty potion flask,7634,5;
+			empty potion flask,7635,5;
+			empty potion flask,7636,5;
+			vial,2006,5;" />
+	</parameters>
+</npc>

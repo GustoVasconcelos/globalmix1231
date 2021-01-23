@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Grand King Oblivion" nameDescription="Grand King Oblivion" race="fire" experience="50000" speed="1700" manacost="0" script="boss.lua">
+	<health now="5500000" max="5500000" />
+	<look corpse="32557" addons="3" feet="78" legs="95" body="79" head="95" type="1072"/>
+	<targetchange interval="5000" chance="20" />
+	<flags>
+
+        <flag rewardboss="1" />
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="95" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2500" skill="250" attack="400" />
+		<attack name="death" interval="700" chance="15" radius="12" target="0" min="-1200" max="-5500">
+			<attribute key="areaEffect" value="mortarea" />
+		</attack>
+		<attack name="speed" interval="1000" chance="12" radius="6" target="0" speedchange="-850" duration="2000">
+			<attribute key="areaEffect" value="poison" />
+		</attack>
+		<attack name="strength" interval="600" chance="10" radius="5" target="0" min="-900" max="-2950">
+			<attribute key="areaEffect" value="blackspark" />
+		</attack>
+		<attack name="fire" interval="1000" chance="13" range="7" radius="7" target="1" min="-1700" max="-3600">
+			<attribute key="shootEffect" value="fire" />
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+		<attack name="manadrain" interval="2000" chance="8" radius="10" target="0" min="-1500" max="-4700">
+			<attribute key="areaEffect" value="energyarea" />
+		</attack>
+		<attack name="drown" interval="1000" chance="1" length="5" spread="6" min="-1500" max="-2400">
+			<attribute key="areaEffect" value="energyarea" />
+		</attack>
+		<attack name="poisoncondition" interval="5000" chance="18" length="0" spread="0" min="-1500" max="-2900">
+			<attribute key="areaEffect" value="greenspark" />
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="6" radius="14" target="0" min="-1600" max="-3800">
+			<attribute key="areaEffect" value="greenshimmer" />
+		</attack>
+		<attack name="outfit" interval="1000" chance="2" radius="8" target="0" monster="falcon knight" duration="5000">
+			<attribute key="areaEffect" value="bluebubble" />
+		</attack>
+		<attack name="outfit" interval="1000" chance="2" radius="8" target="0" monster="falcon paladin" duration="5000">
+			<attribute key="areaEffect" value="bluebubble" />
+		</attack>
+		<attack name="outfit" interval="1000" chance="2" radius="8" target="0" monster="grand master oberon" duration="3000">
+			<attribute key="areaEffect" value="bluebubble" />
+		</attack>        
+	</attacks>
+	<defenses armor="188" defense="145">
+		<defense name="healing" interval="1000" chance="5" min="100" max="5000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="speed" interval="1000" chance="10" speedchange="1100" duration="4000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity physical="0" />
+		<immunity energy="0" />
+		<immunity fire="0" />
+		<immunity poison="0" />
+		<immunity lifedrain="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+		<summons maxSummons="20">
+		<summon name="falcon knight" interval="2000" chance="50" />
+		<summon name="falcon paladin" interval="2000" chance="50" />
+	</summons>
+	<voices interval="2000" chance="7">
+		<voice sentence="I'AM THE GREAT FALCON KING!" yell="1" />
+		<voice sentence="SHOW ME YOUR SKILL'S!" yell="1" />
+		<voice sentence="YOUR FACE WILL BE ADDED TO MY COLLECTION!" yell="1" />
+		<voice sentence="YOU PUNY MORTALS! DIE!" yell="1" />
+		<voice sentence="THE FALCON AGE HAS BEGIN!" yell="1" />
+	</voices>
+	<loot>
+		<item name="crystal coin" countmax="100" chance="100000"/>
+		<item name="golden armor" chance="5000"/>
+		<item name="mastermind shield" chance="5000"/>
+		<item name="gold token" countmax="6" chance="3000"/>
+		<item name="silver token" countmax="6" chance="3000"/>
+		<item name="falcon plate" chance="20"/>
+		<item name="falcon longsword" chance="20"/>
+		<item name="falcon circlet" chance="20"/>
+		<item name="falcon wand" chance="20"/>
+		<item name="falcon rod" chance="20"/>
+		<item name="falcon battleaxe" chance="20"/>
+		<item name="falcon coif" chance="20"/>
+		<item name="falcon greaves" chance="20"/>
+		<item name="golden helmet" chance="200"/>
+		<item name="golden boots" chance="10"/>
+		<item name="bronze medal" chance="1000"/>
+		<item name="falcon escutcheon" chance="20" />
+		<item name="dream matter" chance="5000" />
+		<item name="demon backpack" chance="3000"/>
+		<item name="crown backpack" chance="3000"/>
+		<item name="energetic backpack" chance="3000"/>
+		<item name="anniversary backpack" chance="3000"/>
+		<item name="warlord sword" chance="10"/>
+		<item name="winged helmet" chance="20"/>
+		<item name="ceremonial mask" chance="140"/>
+		
+	</loot>
+</monster>
+

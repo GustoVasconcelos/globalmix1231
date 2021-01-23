@@ -1,0 +1,4 @@
+<monster file="Bosses/feroxa.xml" name="Feroxa"/>
+	<monster file="Bosses/feroxa_wolf.xml" name="Feroxa Wolf"/>
+	<monster file="Bosses/feroxa_real.xml" name="Feroxa Real"/>
+	<monster file="Bosses/feroxa_werewolf.xml" name="Feroxa Werewolf"/>

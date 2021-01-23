@@ -1,0 +1,113 @@
+c:\ot\vc14\x64\release\theforgottenserver.pch
+c:\ot\vc14\x64\release\vc142.pdb
+c:\ot\vc14\x64\release\obj_r\otpch.obj
+c:\ot\vc14\x64\release\obj_r\ban.obj
+c:\ot\vc14\x64\release\obj_r\chat.obj
+c:\ot\vc14\x64\release\obj_r\container.obj
+c:\ot\vc14\x64\release\obj_r\databasemanager.obj
+c:\ot\vc14\x64\release\obj_r\depotchest.obj
+c:\ot\vc14\x64\release\obj_r\gamestore.obj
+c:\ot\vc14\x64\release\obj_r\groups.obj
+c:\ot\vc14\x64\release\obj_r\imbuements.obj
+c:\ot\vc14\x64\release\obj_r\iomap.obj
+c:\ot\vc14\x64\release\obj_r\item.obj
+c:\ot\vc14\x64\release\obj_r\map.obj
+c:\ot\vc14\x64\release\obj_r\movement.obj
+c:\ot\vc14\x64\release\obj_r\outfit.obj
+c:\ot\vc14\x64\release\obj_r\player.obj
+c:\ot\vc14\x64\release\obj_r\protocolstatus.obj
+c:\ot\vc14\x64\release\obj_r\rewardchest.obj
+c:\ot\vc14\x64\release\obj_r\server.obj
+c:\ot\vc14\x64\release\obj_r\spells.obj
+c:\ot\vc14\x64\release\obj_r\thing.obj
+c:\ot\vc14\x64\release\obj_r\trashholder.obj
+c:\ot\vc14\x64\release\obj_r\account.obj
+c:\ot\vc14\x64\release\obj_r\bed.obj
+c:\ot\vc14\x64\release\obj_r\configmanager.obj
+c:\ot\vc14\x64\release\obj_r\creatureevent.obj
+c:\ot\vc14\x64\release\obj_r\fileloader.obj
+c:\ot\vc14\x64\release\obj_r\game.obj
+c:\ot\vc14\x64\release\obj_r\inbox.obj
+c:\ot\vc14\x64\release\obj_r\iomarket.obj
+c:\ot\vc14\x64\release\obj_r\mailbox.obj
+c:\ot\vc14\x64\release\obj_r\monster.obj
+c:\ot\vc14\x64\release\obj_r\networkmessage.obj
+c:\ot\vc14\x64\release\obj_r\outputmessage.obj
+c:\ot\vc14\x64\release\obj_r\position.obj
+c:\ot\vc14\x64\release\obj_r\prey.obj
+c:\ot\vc14\x64\release\obj_r\protocollogin.obj
+c:\ot\vc14\x64\release\obj_r\reward.obj
+c:\ot\vc14\x64\release\obj_r\rsa.obj
+c:\ot\vc14\x64\release\obj_r\script.obj
+c:\ot\vc14\x64\release\obj_r\spawn.obj
+c:\ot\vc14\x64\release\obj_r\teleport.obj
+c:\ot\vc14\x64\release\obj_r\vocation.obj
+c:\ot\vc14\x64\release\obj_r\wildcardtree.obj
+c:\ot\vc14\x64\release\obj_r\xtea.obj
+c:\ot\vc14\x64\release\obj_r\actions.obj
+c:\ot\vc14\x64\release\obj_r\condition.obj
+c:\ot\vc14\x64\release\obj_r\creature.obj
+c:\ot\vc14\x64\release\obj_r\events.obj
+c:\ot\vc14\x64\release\obj_r\house.obj
+c:\ot\vc14\x64\release\obj_r\iologindata.obj
+c:\ot\vc14\x64\release\obj_r\items.obj
+c:\ot\vc14\x64\release\obj_r\modules.obj
+c:\ot\vc14\x64\release\obj_r\mounts.obj
+c:\ot\vc14\x64\release\obj_r\npc.obj
+c:\ot\vc14\x64\release\obj_r\party.obj
+c:\ot\vc14\x64\release\obj_r\protocolold.obj
+c:\ot\vc14\x64\release\obj_r\raids.obj
+c:\ot\vc14\x64\release\obj_r\signals.obj
+c:\ot\vc14\x64\release\obj_r\tasks.obj
+c:\ot\vc14\x64\release\obj_r\tools.obj
+c:\ot\vc14\x64\release\obj_r\waitlist.obj
+c:\ot\vc14\x64\release\obj_r\baseevents.obj
+c:\ot\vc14\x64\release\obj_r\combat.obj
+c:\ot\vc14\x64\release\obj_r\connection.obj
+c:\ot\vc14\x64\release\obj_r\cylinder.obj
+c:\ot\vc14\x64\release\obj_r\database.obj
+c:\ot\vc14\x64\release\obj_r\databasetasks.obj
+c:\ot\vc14\x64\release\obj_r\depotlocker.obj
+c:\ot\vc14\x64\release\obj_r\globalevent.obj
+c:\ot\vc14\x64\release\obj_r\guild.obj
+c:\ot\vc14\x64\release\obj_r\ioguild.obj
+c:\ot\vc14\x64\release\obj_r\iomapserialize.obj
+c:\ot\vc14\x64\release\obj_r\luascript.obj
+c:\ot\vc14\x64\release\obj_r\monsters.obj
+c:\ot\vc14\x64\release\obj_r\otserv.obj
+c:\ot\vc14\x64\release\obj_r\protocol.obj
+c:\ot\vc14\x64\release\obj_r\protocolgame.obj
+c:\ot\vc14\x64\release\obj_r\scheduler.obj
+c:\ot\vc14\x64\release\obj_r\scriptmanager.obj
+c:\ot\vc14\x64\release\obj_r\talkaction.obj
+c:\ot\vc14\x64\release\obj_r\tile.obj
+c:\ot\vc14\x64\release\obj_r\weapons.obj
+c:\ot\vc14\x64\release\theforgottenserver.exe
+c:\ot\vc14\x64\release\theforgottenserver.pdb
+c:\ot\vc14\x64\release\theforgottenserver.res
+c:\ot\vc14\x64\release\vcpkg.applocal.log
+c:\ot\vc14\x64\release\boost_filesystem-vc142-mt-x64-1_73.dll
+c:\ot\vc14\x64\release\boost_iostreams-vc142-mt-x64-1_73.dll
+c:\ot\vc14\x64\release\zlib1.dll
+c:\ot\vc14\x64\release\bz2.dll
+c:\ot\vc14\x64\release\lzma.dll
+c:\ot\vc14\x64\release\zstd.dll
+c:\ot\vc14\x64\release\boost_regex-vc142-mt-x64-1_73.dll
+c:\ot\vc14\x64\release\libmariadb.dll
+c:\ot\vc14\x64\release\lua51.dll
+c:\ot\vc14\x64\release\pugixml.dll
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\theforgottenserver.res
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\theforgottenserver.pch
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\theforgottenserver.pdb
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\vc142.pdb
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\theforgottenserver.exe
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\theforgo.a10f9657.tlog\cl.command.1.tlog
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\theforgo.a10f9657.tlog\cl.read.1.tlog
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\theforgo.a10f9657.tlog\cl.write.1.tlog
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\theforgo.a10f9657.tlog\link.command.1.tlog
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\theforgo.a10f9657.tlog\link.read.1.tlog
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\theforgo.a10f9657.tlog\link.write.1.tlog
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\theforgo.a10f9657.tlog\rc.command.1.tlog
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\theforgo.a10f9657.tlog\rc.read.1.tlog
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\theforgo.a10f9657.tlog\rc.write.1.tlog
+c:\users\nelsi\onedrive\área de trabalho\ntmc-otserver\s e r v i d o r\vc14\x64\release\theforgo.a10f9657.tlog\theforgottenserver.write.1u.tlog

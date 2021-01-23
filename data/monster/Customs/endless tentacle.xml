@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Endless Tentacle" nameDescription="a Endless Tentacle" race="venom" experience="25000" speed="650" manacost="0">
+	<health now="20000" max="20000"/>
+	<look type="681" corpse="8721"/>
+  	<targetchange interval="5000" chance="8" />
+  	<strategy attack="100" defense="0" />
+  	<flags>
+    		<flag summonable="0" />
+    		<flag attackable="1" />
+    		<flag hostile="1" />
+    		<flag illusionable="0" />
+    		<flag convinceable="0" />
+    		<flag pushable="0" />
+    		<flag canpushitems="1" />
+    		<flag canpushcreatures="1" />
+    		<flag targetdistance="1" />
+    		<flag staticattack="90" />
+    		<flag runonhealth="800" />
+			<flag canwalkonenergy="1" />
+			<flag canwalkonfire="1" />
+			<flag canwalkonpoison="1" />
+
+	</flags>
+	<script>
+	</script>
+  	<attacks>
+    		<attack name="melee" interval="2000" skill="140" attack="200" />
+    		<attack name="blightwalker curse" interval="1000" chance="80"/>
+    		<attack name="lifedrain" interval="1200" chance="14" radius="4" target="0" min="-965" max="-1535">
+      			<attribute key="areaEffect" value="greenshimmer" />
+    		</attack>
+    			<attack name="drunk" interval="2000" chance="20" duration="35000" radius="7" target="0">
+      			<attribute key="areaEffect" value="greenspark" />
+    		</attack>
+  	</attacks>
+  	<defenses armor="15" defense="15">
+		<defense name="healing" interval="2000" chance="20" min="525" max="1250">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+  	<elements>
+  	</elements>
+  	<immunities>
+    		<immunity lifedrain="1" />
+    		<immunity invisible="1" />
+    		<immunity drunk="1" />
+    		<immunity paralyze="1" />
+  	</immunities>
+	<loot>
+	<!--Sempre-->
+	<item name="Ham" count="4"  chance="40080" />
+		
+	<!--quase sempre-->
+	<item name="Poisonous Slime" count="5"  chance="11930" />  
+	<item name="Blue Crystal Shard"  chance="9660" />  
+	<item name="Violet Crystal Shard"  chance="8180" />  
+	<item name="Green Crystal Shard"  chance="8030" />  
+	<item name="Onyx Chip" count="4"  chance="8560" />  
+	
+			
+	<!--semi raro-->
+	<item name="Small Enchanted Emerald" count="2"  chance="2940" />  
+	<item name="Small Emerald" count="2"   chance="5080" />  
+	<item name="Gold Ingot" count="3" chance="2970" />  
+
+				
+	<!--raro-->  
+	<item id="7632"  chance="3100" />  <!--Giant Shimmering Pearl--> 
+						
+	<!--MuitoRaro-->
+	<item name="Mycological Bow"  chance="1200" />  
+	<item name="Mushroom Backpack"  chance="1500" />
+	<item name="mastermind shield"  chance="2500" />
+	<item name="golden legs"  chance="2500" />
+	<item name="magic plate armor"  chance="2500" />
+	<item name="skull helmet"  chance="1500" />
+	
+
+	</loot>
+</monster>

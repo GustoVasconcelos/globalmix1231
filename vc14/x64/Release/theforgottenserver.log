@@ -1,0 +1,93 @@
+﻿  otpch.cpp
+  account.cpp
+  actions.cpp
+  ban.cpp
+  baseevents.cpp
+  bed.cpp
+  chat.cpp
+  combat.cpp
+  condition.cpp
+  configmanager.cpp
+  connection.cpp
+  container.cpp
+  creature.cpp
+  creatureevent.cpp
+  cylinder.cpp
+  database.cpp
+  databasemanager.cpp
+  databasetasks.cpp
+  depotchest.cpp
+  depotlocker.cpp
+  events.cpp
+  fileloader.cpp
+  game.cpp
+  gamestore.cpp
+  globalevent.cpp
+  groups.cpp
+  guild.cpp
+  house.cpp
+  imbuements.cpp
+C:\Users\nelsi\OneDrive\Área de Trabalho\NTMC-OTServer\S E R V I D O R\src\game.cpp(5086,70): warning C4100: 'damage': unreferenced formal parameter
+  inbox.cpp
+  ioguild.cpp
+  iologindata.cpp
+  iomap.cpp
+  iomapserialize.cpp
+  iomarket.cpp
+  item.cpp
+  items.cpp
+  luascript.cpp
+  mailbox.cpp
+  map.cpp
+  modules.cpp
+  monster.cpp
+  monsters.cpp
+  mounts.cpp
+  movement.cpp
+C:\Users\nelsi\OneDrive\Área de Trabalho\NTMC-OTServer\S E R V I D O R\src\monster.cpp(627,36): warning C4456: declaration of 'target' hides previous local declaration
+C:\Users\nelsi\OneDrive\Área de Trabalho\NTMC-OTServer\S E R V I D O R\src\monster.cpp(526,12): message : see declaration of 'target'
+  networkmessage.cpp
+  npc.cpp
+  otserv.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.24.28307\include\xtgmath.h(24,70): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=uint32_t
+          ] (compiling source file ..\src\networkmessage.cpp)
+  outfit.cpp
+  outputmessage.cpp
+  party.cpp
+  player.cpp
+  position.cpp
+  prey.cpp
+  protocol.cpp
+  protocolgame.cpp
+  protocollogin.cpp
+  protocolold.cpp
+  protocolstatus.cpp
+  raids.cpp
+  reward.cpp
+  rewardchest.cpp
+  rsa.cpp
+  scheduler.cpp
+  script.cpp
+  scriptmanager.cpp
+  server.cpp
+  signals.cpp
+  spawn.cpp
+  spells.cpp
+  talkaction.cpp
+  tasks.cpp
+  teleport.cpp
+  thing.cpp
+  tile.cpp
+  tools.cpp
+  trashholder.cpp
+  vocation.cpp
+  waitlist.cpp
+  weapons.cpp
+  wildcardtree.cpp
+  xtea.cpp
+  Generating code
+  Finished generating code
+  theforgottenserver.vcxproj -> C:\Users\nelsi\OneDrive\Área de Trabalho\NTMC-OTServer\S E R V I D O R\vc14\x64\Release\theforgottenserver.exe
