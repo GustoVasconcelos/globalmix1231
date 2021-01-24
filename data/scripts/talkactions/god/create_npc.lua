@@ -1,6 +1,6 @@
-local talk = TalkAction("/m")
+local createNpc = TalkAction("/n")
 
-function talk.onSay(player, words, param)
+function createNpc.onSay(player, words, param)
 	if not player:getGroup():getAccess() or player:getAccountType() < ACCOUNT_TYPE_GOD then
 		return true
 	end
@@ -11,12 +11,9 @@ function talk.onSay(player, words, param)
 	end
 
 	local position = player:getPosition()
-	local monster = Game.createMonster(param, position)
-	if monster then
-		if monster:getType():isRewardBoss() then
-			monster:setReward(true)
-		end
-		monster:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
+	local npc = Game.createNpc(param, position)
+	if npc then
+		npc:setMasterPos(position)
 		position:sendMagicEffect(CONST_ME_MAGIC_RED)
 	else
 		player:sendCancelMessage("There is not enough room.")
@@ -25,5 +22,5 @@ function talk.onSay(player, words, param)
 	return false
 end
 
-talk:separator(" ")
-talk:register()
+createNpc:separator(" ")
+createNpc:register()
