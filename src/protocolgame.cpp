@@ -4592,8 +4592,8 @@ void ProtocolGame::sendItemsPrice()
 
 void ProtocolGame::sendProgressbar(uint32_t id, uint32_t duration, bool ltr)
 {
-	if (!otclientV8 || otclientV8 < 260)
-		return;
+	//if (!otclientV8 || otclientV8 < 260)
+		//return;
 
     NetworkMessage msg;
     msg.addByte(0x3b);

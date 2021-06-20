@@ -7247,7 +7247,7 @@ void Game::updateSpectatorsPvp(Thing* thing)
 
 void Game::startProgressbar(Creature* creature, uint32_t duration, bool ltr)
 {
-    SpectatorVec spectators;
+    SpectatorHashSet spectators;
     map.getSpectators(spectators, creature->getPosition(), false, true);
     for (Creature* spectator : spectators) {
         if (Player* tmpPlayer = spectator->getPlayer()) {
