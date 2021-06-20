@@ -2442,6 +2442,8 @@ void LuaScriptInterface::registerFunctions()
 	registerMethod("Creature", "move", LuaScriptInterface::luaCreatureMove);
 
 	registerMethod("Creature", "getZone", LuaScriptInterface::luaCreatureGetZone);
+	
+	registerMethod("Creature", "sendProgressbar", LuaScriptInterface::luaCreatureSetProgressbar);
 
 	// Player
 	registerClass("Player", "Creature", LuaScriptInterface::luaPlayerCreate);
@@ -8450,6 +8452,23 @@ int LuaScriptInterface::luaCreatureGetZone(lua_State* L)
 		lua_pushnil(L);
 	}
 	return 1;
+}
+
+int LuaScriptInterface::luaCreatureSetProgressbar(lua_State* L)
+{
+    // creature:sendProgressbar(duration, leftToRight)
+    Creature* creature = getUserdata<Creature>(L, 1);
+    uint32_t duration = getNumber<uint32_t>(L, 2);
+    bool ltr = getBoolean(L, 3);
+    if (creature) {
+        g_game.startProgressbar(creature, duration, ltr);
+        pushBoolean(L, true);
+    }
+    else {
+        lua_pushnil(L);
+    }
+
+    return 1;
 }
 
 // Player

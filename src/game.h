@@ -542,8 +542,9 @@ class Game
 		bool isExpertPvpEnabled();
 		void updateSpectatorsPvp(Thing* thing);
 
-
 		bool reload(ReloadTypes_t reloadType);
+		
+		void startProgressbar(Creature* creature, uint32_t duration, bool ltr = true);
 
 		bool itemidHasMoveevent(uint32_t itemid);
 		bool hasEffect(uint8_t effectId);

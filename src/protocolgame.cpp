@@ -4589,3 +4589,16 @@ void ProtocolGame::sendItemsPrice()
 
 	writeToOutputBuffer(msg);
 }
+
+void ProtocolGame::sendProgressbar(uint32_t id, uint32_t duration, bool ltr)
+{
+	if (!otclientV8 || otclientV8 < 260)
+		return;
+
+    NetworkMessage msg;
+    msg.addByte(0x3b);
+    msg.add<uint32_t>(id);
+    msg.add<uint32_t>(duration);
+    msg.addByte(ltr);
+    writeToOutputBuffer(msg);
+} 
