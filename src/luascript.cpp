@@ -2370,6 +2370,7 @@ void LuaScriptInterface::registerFunctions()
 	registerMethod("Creature", "isCreature", LuaScriptInterface::luaCreatureIsCreature);
 	registerMethod("Creature", "isInGhostMode", LuaScriptInterface::luaCreatureIsInGhostMode);
 	registerMethod("Creature", "isHealthHidden", LuaScriptInterface::luaCreatureIsHealthHidden);
+	registerMethod("Creature", "isMovementBlocked", LuaScriptInterface::luaCreatureIsMovementBlocked);
 	registerMethod("Creature", "isImmune", LuaScriptInterface::luaCreatureIsImmune);
 
 	registerMethod("Creature", "canSee", LuaScriptInterface::luaCreatureCanSee);
@@ -2410,6 +2411,7 @@ void LuaScriptInterface::registerFunctions()
 	registerMethod("Creature", "getMaxHealth", LuaScriptInterface::luaCreatureGetMaxHealth);
 	registerMethod("Creature", "setMaxHealth", LuaScriptInterface::luaCreatureSetMaxHealth);
 	registerMethod("Creature", "setHiddenHealth", LuaScriptInterface::luaCreatureSetHiddenHealth);
+	registerMethod("Creature", "setMovementBlocked", LuaScriptInterface::luaCreatureSetMovementBlocked);
 
 	registerMethod("Creature", "isMoveLocked", LuaScriptInterface::luaCreatureIsMoveLocked);
 	registerMethod("Creature", "setMoveLocked", LuaScriptInterface::luaCreatureSetMoveLocked);
@@ -7602,6 +7604,18 @@ int LuaScriptInterface::luaCreatureIsHealthHidden(lua_State* L)
 	return 1;
 }
 
+int LuaScriptInterface::luaCreatureIsMovementBlocked(lua_State* L)
+{
+	// creature:isMovementBlocked()
+	const Creature* creature = getUserdata<const Creature>(L, 1);
+	if (creature) {
+		pushBoolean(L, creature->isMovementBlocked());
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
 int LuaScriptInterface::luaCreatureCanSee(lua_State* L)
 {
 	// creature:canSee(position)
@@ -8015,6 +8029,19 @@ int LuaScriptInterface::luaCreatureSetHiddenHealth(lua_State* L)
 	if (creature) {
 		creature->setHiddenHealth(getBoolean(L, 2));
 		g_game.addCreatureHealth(creature);
+		pushBoolean(L, true);
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
+int LuaScriptInterface::luaCreatureSetMovementBlocked(lua_State* L)
+{
+	// creature:setMovementBlocked(state)
+	Creature* creature = getUserdata<Creature>(L, 1);
+	if (creature) {
+		creature->setMovementBlocked(getBoolean(L, 2));
 		pushBoolean(L, true);
 	} else {
 		lua_pushnil(L);
