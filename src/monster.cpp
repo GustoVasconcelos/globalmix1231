@@ -523,25 +523,25 @@ bool Monster::searchTarget(TargetSearchType_t searchType /*= TARGETSEARCH_DEFAUL
 		return false;
 	}
 
-	Creature* target = nullptr;
+	Creature* getTarget = nullptr;
 
 
 	switch (searchType) {
 		case TARGETSEARCH_NEAREST: {
-			target = nullptr;
+			getTarget = nullptr;
 			if (!resultList.empty()) {
 				auto it = resultList.begin();
-				target = *it;
+				getTarget = *it;
 
 				if (++it != resultList.end()) {
-					const Position& targetPosition = target->getPosition();
+					const Position& targetPosition = getTarget->getPosition();
 					int32_t minRange = std::max<int32_t>(Position::getDistanceX(myPos, targetPosition), Position::getDistanceY(myPos, targetPosition));
 					do {
 						const Position& pos = (*it)->getPosition();
 
 						int32_t distance = std::max<int32_t>(Position::getDistanceX(myPos, pos), Position::getDistanceY(myPos, pos));
 						if (distance < minRange) {
-							target = *it;
+							getTarget = *it;
 							minRange = distance;
 						}
 					} while (++it != resultList.end());
@@ -556,42 +556,42 @@ bool Monster::searchTarget(TargetSearchType_t searchType /*= TARGETSEARCH_DEFAUL
 					const Position& pos = creature->getPosition();
 					int32_t distance = std::max<int32_t>(Position::getDistanceX(myPos, pos), Position::getDistanceY(myPos, pos));
 					if (distance < minRange) {
-						target = creature;
+						getTarget = creature;
 						minRange = distance;
 					}
 				}
 			}
 
-			if (target && selectTarget(target)) {
+			if (getTarget && selectTarget(getTarget)) {
 				return true;
 			}
 			break;
 		}		
 		case TARGETSEARCH_HP: {
-			target = nullptr;
+			getTarget = nullptr;
 			if (!resultList.empty()) {
 				auto it = resultList.begin();
-				target = *it;
+				getTarget = *it;
 				if (++it != resultList.end()) {
-					int32_t minHp = target->getHealth();
+					int32_t minHp = getTarget->getHealth();
 					do {
 						if ((*it)->getHealth() < minHp) {
-							target = *it;
-            						minHp = target->getHealth();
+							getTarget = *it;
+            						minHp = getTarget->getHealth();
 						}
 					} while (++it != resultList.end());
 				}
 			}
-			if (target && selectTarget(target)) {
+			if (getTarget && selectTarget(getTarget)) {
 				return true;
 			}
 			break;
 		}
 		case TARGETSEARCH_DAMAGE: {
-			target = nullptr;
+			getTarget = nullptr;
 			if (!resultList.empty()) {
 				auto it = resultList.begin();
-				target = *it;
+				getTarget = *it;
 				if (++it != resultList.end()) {
 					int32_t mostDamage = 0;
 					do {
@@ -599,13 +599,13 @@ bool Monster::searchTarget(TargetSearchType_t searchType /*= TARGETSEARCH_DEFAUL
 						if (dmg != damageMap.end()) {
 							if (dmg->second.total > mostDamage) {
 								mostDamage = dmg->second.total;
-								target = *it;
+								getTarget = *it;
 							}
 						}
 					} while (++it != resultList.end());
 				}
 			}
-			if (target && selectTarget(target)) {
+			if (getTarget && selectTarget(getTarget)) {
 				return true;
 			}
 			break;
