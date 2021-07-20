@@ -4176,10 +4176,9 @@ void ProtocolGame::AddPlayerSkills(NetworkMessage& msg)
 		msg.add<uint16_t>(player->getBaseSkill(i));
 	}
 
-	if (version >= 1150) { // used for imbuement (Feather)
-		msg.add<uint32_t>(player->getCapacity()); // total capacity
-		msg.add<uint32_t>(player->getCapacity()); // base total capacity
-	}
+	// used for imbuement (Feather)
+	msg.add<uint32_t>(player->getCapacity()); // total capacity
+	msg.add<uint32_t>(player->getBaseCapacity()); // base total capacity
 }
 
 void ProtocolGame::AddOutfit(NetworkMessage& msg, const Outfit_t& outfit, bool addMount/* = true*/)

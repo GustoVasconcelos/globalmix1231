@@ -4977,11 +4977,6 @@ void Player::onEquipImbueItem(Imbuement* imbuement)
 		}
 	}
 
-	if (requestUpdate) {
-		sendStats();
-		sendSkills();
-	}
-
 	// speed
 	if (imbuement->speed != 0) {
 		g_game.changeSpeed(this, imbuement->speed);
@@ -4989,8 +4984,13 @@ void Player::onEquipImbueItem(Imbuement* imbuement)
 
 	// capacity
 	if (imbuement->capacity != 0) {
-		capacity += imbuement->capacity;
+		requestUpdate = true;
+		bonusCapacity = (capacity * imbuement->capacity)/100;
+	}
+
+	if (requestUpdate) {
 		sendStats();
+		sendSkills();
 	}
 
 	return;
@@ -5021,11 +5021,6 @@ void Player::onDeEquipImbueItem(Imbuement* imbuement)
 		}
 	}
 
-	if (requestUpdate) {
-		sendStats();
-		sendSkills();
-	}
-
 	// speed
 	if (imbuement->speed != 0) {
 		g_game.changeSpeed(this, -imbuement->speed);
@@ -5033,8 +5028,13 @@ void Player::onDeEquipImbueItem(Imbuement* imbuement)
 
 	// capacity
 	if (imbuement->capacity != 0) {
-		capacity -= imbuement->capacity;
+		requestUpdate = true;
+		bonusCapacity = 0;
+	}
+
+	if (requestUpdate) {
 		sendStats();
+		sendSkills();
 	}
 
 	return;
