@@ -1270,7 +1270,6 @@
 	<instant name="Malofur Explosion" words="###481" aggressive="0" blockwalls="1" needtarget="0" needlearn="1" script="monster/malofur_explosion.lua" />
 	<instant name="Nightmare Beast Curse" words="###482" aggressive="0" blockwalls="1" needtarget="1" needlearn="1" script="monster/nightmare_beast_curse.lua" />
 	<instant name="Plagueroot Skill Reducer" words="###483" aggressive="0" blockwalls="1" needtarget="0" needlearn="1" script="monster/plagueroot_skill_reducer.lua" />
-	<instant name="Izcandar Wave" words="###484" direction="1" aggressive="0" blockwalls="1" needtarget="0" needlearn="1" script="monster/izcandar_wave.lua" />
 	<instant name="Alptramun Wave" words="###472" direction="1" blockwalls="1" needtarget="1" needlearn="1" script="monster/alptramun_wave.lua" />
 	
 	

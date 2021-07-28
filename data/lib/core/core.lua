@@ -1,3 +1,4 @@
+dofile('data/lib/core/mining.lua') --mining
 dofile('data/lib/core/bit.lua')
 dofile('data/lib/core/constants.lua')
 dofile('data/lib/core/container.lua')

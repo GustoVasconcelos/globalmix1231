@@ -367,6 +367,33 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 			return true
 		end
 	end
+	
+	-- Mining System --
+	for index, value in pairs(mining_config) do
+		if target.actionid == index then
+			if(target.itemid == value.idStone)then
+				if value.progressbar == true then
+					player:sendProgressbar(value.time * 1000, true)
+				end
+				doSendMagicEffect(toPosition, CONST_ME_GROUNDSHAKER)
+				local velo = player:getSpeed()
+				local event_fim = addEvent(function()
+					target:transform(value.exStone)
+					player:getPosition():sendMagicEffect(CONST_ME_SOUND_GREEN)
+					player:say('Success!', TALKTYPE_MONSTER_SAY)
+					player:addItem(value.idItem, value.quantItem)
+				end, value.time*1000)
+				addEvent(function()
+					target:transform(value.idStone)
+				end, value.time*2000)
+				for i = 1, value.time do
+					local event_effects = addEvent(function()
+						doSendMagicEffect(toPosition, CONST_ME_GROUNDSHAKER)
+					end, i*1000)
+				end
+			end
+		end
+	end
 
 	local targetId, targetActionId = target.itemid, target.actionid
 	if isInArray({354, 355}, targetId) and (target:hasAttribute(ITEM_ATTRIBUTE_UNIQUEID) or target:hasAttribute(ITEM_ATTRIBUTE_ACTIONID)) then
